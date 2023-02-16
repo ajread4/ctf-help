@@ -1,4 +1,6 @@
-# C Code
+# Binary Exploitation
+
+## C Code
 C code has some interesting vulnerabilities when it comes to binary exploitation. 
 ### Max Value 
 Below has a good explanation with example code. I got this from the AllArmyCTF.

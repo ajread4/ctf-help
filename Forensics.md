@@ -14,6 +14,9 @@ The magic number of a file is unique and shows what type of file something is. U
 
 https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/
 
+### Create File 
+If provided just the contents of a hexdump, ```xxd``` has the ability to reverse the hexdump and recreate the file using the ```-r``` flag. 
+
 ## Floppy Disk
 ### QEMU
 QEMU is a great resource for examing a floppy image. Example command: 

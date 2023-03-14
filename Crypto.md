@@ -161,3 +161,9 @@ Find the SHA256 hash of a given file
 
 ## Hashcat
 Hashcat is a great resource for cracking hashes. With a high powered machine it becomes better and better at its job. Website: https://hashcat.net/hashcat/
+
+# Certificates 
+
+## Certificate Signing Requests
+Sometimes, there are challenges that require analysis of a CSR file. Use [CSR Decoder](https://www.sslshopper.com/csr-decoder.html) or openssl to analyze. 
+```openssl req -in mycsr.csr -noout -text```

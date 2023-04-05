@@ -79,4 +79,23 @@ Wifi challenges are often used for OSINT, RF, or basic network information chall
 ## Wigle
 Wigle is a great wifi utility that basically shows networks based on location. There have been some challenges that required fetching the SSID or network name based on a certain geographic location. The website: ```http://wigle.net```
 
+# Random Files 
+There are various random file formats that have been seen on CTFs. 
 
+## DAE Files
+DAE files can be inspected using a tool called blender which can be downloaded on Linux. Often DAE files are mechanical drawings for engineering. 
+
+# Privilege Escalation 
+Sometimes challenges require you to escalate privileges and read a flag as root. 
+
+## Compgen
+compgen is a command line tool native to linux that can be run to determine what can be run in the terminal. Often, CTFs will drop into a low privilege or weird terminal that you need to get out of. 
+
+## Python
+In order to escalate privileges, it may be required to use python to do so. If so, the user can look at which libraries are called and in what order with ```python3 -c 'import sys; print("\n".join(sys.path))'```. 
+
+# Command Line Tools 
+Some CTFs drop a user into a bad terminal that requires little tricks to access the desired information. 
+
+## Echo 
+Using ```echo *``` will read the contents of a directory if unable to use ```ls -la```. 

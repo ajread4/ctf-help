@@ -75,8 +75,9 @@ Network logs provided in forensics challenges can be in the form of Bro or zZeek
 Command bro-cut works well to easily examine bro log columns and grep across them. It extracts the given columns from ASCII Bro logs on standard input, and outputs them to standard output. If no columns are given, all are selected. By default, bro-cut does not include format header blocks in the output. 
 ```bro-cut [options] [columns]```
 
-# Email
+## Email
 Some challenges require analysis of emails. 
 
-## Email Headers
+### Email Headers
 There are various tools to use for examining email headers to include [Message Header Analyzer](https://mha.azurewebsites.net/), [Google Message Header](https://toolbox.googleapps.com/apps/messageheader/analyzeheader), [Mail Header Analysis](https://mailheader.org/). There is also a good room on TryHackMe for email header analysis [here](https://tryhackme.com/room/phishingemails3tryoe). 
+

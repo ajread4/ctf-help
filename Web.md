@@ -6,6 +6,9 @@ Inspecting the authentication mechanism or means by which a user passes their us
 ### Admin Credentials in JS
 Use developer tools in the browser to inspect the authentication procedure. Files can pop up on the network connection that point to how the user is authenticated. 
 
+### Java Web Tokens (JWT) 
+JWTs are a common way for sites to authenticate users. Burpsuite can be used to check for the JWT within the authentication bearer section of the request. Hashcat as as module (16500) to crack the JWTs. Cheat sheet for cracking and abusing JWT can be found [here](https://book.hacktricks.xyz/generic-methodologies-and-resources/brute-force#jwt). 
+
 ## File Upload 
 If the CTF challenge needs you to drop a shell to get the flag or gain access to a system. 
 
@@ -92,5 +95,6 @@ sqlmap -r sqli_save --tamper=space2comment --dbms=SQLite --dump-all -p search --
 XML has some interesting vulnerabilities that you can use if the webpage uses an XML parser. 
 
 ### XML External Entity 
-XXE can allow you to run system commands if the webpage has an XML parser. Use this: https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing
+XXE can allow you to run system commands if the webpage has an XML parser. Use this: https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing. 
+Burpsuite can help with looking at possible XXE vulnerabilities. Good code to use for XXE is: ```<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>```. 
 

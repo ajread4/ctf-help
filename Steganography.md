@@ -6,8 +6,17 @@ Some CTF challenges require analysis of images for colors, space, hidden words, 
 ### GIMP 
 Gimp is an image manipulation and paint program. If you are given two images and it appears that you need to lay them on top of each other to find the flag use gimp and change the opacity. 
 
+### pngcheck
+pngcheck examines a pngfile for possible flags or other hidden information. Information about the tool can be found [here](https://wiki.bi0s.in/steganography/pngcheck/)
+
 ## Metadata
 For many stegonagraphy challenges, the flags are hidden within the metadata. 
+
+### stegoVeritas
+The catch-all tool for stego that runs a combination of various tools below. It can be downloaded on github: https://github.com/bannsec/stegoVeritas. 
+
+### Zsteg
+Another stego tool that must be installed using ruby. 
 
 ### Exiftool 
 Exiftool is a great command line tool for reading metadata from a file. 

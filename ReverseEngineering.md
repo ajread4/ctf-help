@@ -16,3 +16,9 @@ The xxd command returns a hexdump of the executable.
 
 ### Objdump 
 Objdump is a command to display object data of a file. 
+
+## Java 
+Some challenges in CTFs require analysis of Java code. 
+
+### Disassemble
+Analyze java code using ```javap -c file.class``` on the command line. 

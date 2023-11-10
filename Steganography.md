@@ -4,7 +4,7 @@
 Some CTF challenges require analysis of images for colors, space, hidden words, etc. 
 
 ### GIMP 
-Gimp is an image manipulation and paint program. If you are given two images and it appears that you need to lay them on top of each other to find the flag use gimp and change the opacity. 
+Gimp is an image manipulation and paint program. If you are given two images and it appears that you need to lay them on top of each other to find the flag use gimp and change the opacity. Gimp is also able to remove layers of images and see the ones that are placed on top of each other. 
 
 ### pngcheck
 pngcheck examines a pngfile for possible flags or other hidden information. Information about the tool can be found [here](https://wiki.bi0s.in/steganography/pngcheck/)

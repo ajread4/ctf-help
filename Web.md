@@ -98,3 +98,7 @@ XML has some interesting vulnerabilities that you can use if the webpage uses an
 XXE can allow you to run system commands if the webpage has an XML parser. Use this: https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing. 
 Burpsuite can help with looking at possible XXE vulnerabilities. Good code to use for XXE is: ```<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>```. 
 
+## Stored Passwords 
+
+### Firefox Passwords
+Passwords from firefox can be snagged from a ```login.json``` file. There is a good write up [here](https://medium.com/geekculture/how-to-hack-firefox-passwords-with-python-a394abf18016). The code can be found in Python on Github [here](https://github.com/unode/firefox_decrypt). 

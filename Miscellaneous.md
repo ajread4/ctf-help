@@ -4,10 +4,13 @@ Examining audio files in CTFs is not always the most fun. But, there are some in
 ## Audacity
 Audacity is a great utility for examining WAV files. 
 
-# CMDLine 
+## DTMF Tones 
+DTMF tones are interesting additions as audio files to CTFs. There is a DTMF identifier [here](https://unframework.github.io/dtmf-detect/#/). 
+
+# CMDLine
 There are some awesome command line utilities that can help with CTFs. 
 
-## Cut 
+## Cut
 
 Search for a specific word within a file, cut based on a certain column, sort them so that they are alphabetical, and then make sure they are all unique, finally, count the number of lines
     ```Command: grep word_to_search file_location | cut -d " " -f column_to_choose | sort | uniq | wc -l```
@@ -21,17 +24,23 @@ Add up the total number of values (in this instance KB) within a certain column 
 ## Less
 You can run a command with: ```!command ``` while in ```less```. 
 
-## Grep 
+## Grep
 ```grep``` is a great command for basic searching. One of the key flags is the ```-r``` or recursive flag. 
 
 ## Shell Type
 To find out what type of shell you are running in:
     ```Command: echo $0```
 
-# FileShare 
+## Diff
+If you need to compare two files for differences, use ```diff [file1] [file2]```. There is also a way to compare recursively with ```-r```. 
+
+## Diffuse
+If you need to compare more than two files for differences, use ```diffuse [file1] [file2] [file3] [file4]```. 
+
+# FileShare
 Some challenges require you to interact with a network file share. 
 
-## Smbclient 
+## Smbclient
 Used to access Samba share 
 ```
 Command: smbclient //REPLACE_INSTANCE_IP_ADDRESS/**sharename**
@@ -59,10 +68,10 @@ Some of the good options are:
 	
 ```Command: fcrackzip -v -u -D -p rockout .zip_file*```
 
-## John the Ripper 
+## John the Ripper
 Decrypting passwords with John the Ripper when ```/etc/passwd``` and ```/etc/shadow``` are given. Before cracking with John the Ripper, the passwd and shadow files need to be unshadowed. 
 
-## PDFCrack 
+## PDFCrack
 Crack pdfs that are encrypted using a password. 
 ```Command: pdfcrack -w location_or_rockyou location_of_pdf```
 
@@ -73,19 +82,19 @@ Ever since COVID, QR codes have really been on the rise.
 Scan QR codes in a terminal. 
 ```zbarimg - scan and decode bar codes from image file(s)```
 
-# Wifi 
+# Wifi
 Wifi challenges are often used for OSINT, RF, or basic network information challenges. 
 
 ## Wigle
 Wigle is a great wifi utility that basically shows networks based on location. There have been some challenges that required fetching the SSID or network name based on a certain geographic location. The website: ```http://wigle.net```
 
-# Random Files 
+# Random Files
 There are various random file formats that have been seen on CTFs. 
 
 ## DAE Files
 DAE files can be inspected using a tool called blender which can be downloaded on Linux. Often DAE files are mechanical drawings for engineering. 
 
-# Privilege Escalation 
+# Privilege Escalation
 Sometimes challenges require you to escalate privileges and read a flag as root. 
 
 ## Compgen
@@ -94,8 +103,8 @@ compgen is a command line tool native to linux that can be run to determine what
 ## Python
 In order to escalate privileges, it may be required to use python to do so. If so, the user can look at which libraries are called and in what order with ```python3 -c 'import sys; print("\n".join(sys.path))'```. 
 
-# Command Line Tools 
+# Command Line Tools
 Some CTFs drop a user into a bad terminal that requires little tricks to access the desired information. 
 
-## Echo 
+## Echo
 Using ```echo *``` will read the contents of a directory if unable to use ```ls -la```. 

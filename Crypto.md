@@ -139,6 +139,8 @@ It is definitely a Polybius cipher and can be decrypted using: https://www.dcode
 ## ROT13
 It is also called the Caesar Cipher where the letters are shifted 13 spots from their original location. Use CyberChef to determine flag. 
 
+## Wingdings
+If the code looks like:  ♐●♋♑❀♏📁🖮🖲📂♍♏⌛🖰♐🖮📂🖰📂🖰🖰♍📁🗏🖮🖰♌📂♍📁♋🗏♌♎♍🖲♏ or it references "wings", then it is windings! Use an [online decryption tool](https://www.dcode.fr/wingdings-font )
 # Hashes 
 Hashes come in a variety of versions and have been presented a variety of ways on a CTF. 
 

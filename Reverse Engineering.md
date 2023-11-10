@@ -22,3 +22,13 @@ Some challenges in CTFs require analysis of Java code.
 
 ### Disassemble
 Analyze java code using ```javap -c file.class``` on the command line. 
+
+## Code
+Some reverse engineering challenges require you to review code and see what it does. 
+
+### Code Beautifier
+There is an awesome code beautifier, especially with PHP [here](https://codebeautify.org/php-beautifier#google_vignette)https://github.com/unode/firefox_decrypt
+
+### VBScript Encryption/Decryption
+If there is any mention of WScript or VBScript, use the decryption tool [here](https://master.ayra.ch/vbs/vbs.aspx). 
+

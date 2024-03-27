@@ -4,7 +4,7 @@ Examining audio files in CTFs is not always the most fun. But, there are some in
 ## Audacity
 Audacity is a great utility for examining WAV files. 
 
-## DTMF Tones 
+## DTMF Tones
 DTMF tones are interesting additions as audio files to CTFs. There is a DTMF identifier [here](https://unframework.github.io/dtmf-detect/#/). 
 
 # CMDLine
@@ -108,3 +108,18 @@ Some CTFs drop a user into a bad terminal that requires little tricks to access 
 
 ## Echo
 Using ```echo *``` will read the contents of a directory if unable to use ```ls -la```. 
+
+# Git
+There are some challenges that revolve around git repos like commits and pull history. 
+
+## Log
+Review the old commits from a git repo using ```git log -p -2```. 
+
+## Branch
+Look for specific flags within other branches with ```git branch```. 
+
+# Python
+There are some challenges that are specific for python code. 
+
+## Symlinks
+There is a possibility to read a file in python with ```f.read()``` where you can create a symlink to read another file. 

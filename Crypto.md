@@ -1,7 +1,7 @@
-# Algorithms 
+# Algorithms
 There are some common algorithms in CTF crypto challenges. 
 
-### RSA 
+## RSA
 If given n,c, and e, use factordb (http://factordb.com/) and the below code (from John Hammond, found here: https://pastebin.com/ERAMhJ1v) to find c. 
 ```
 #!/usr/bin/env python
@@ -96,7 +96,7 @@ There are tons of ciphers out there that are used for CTF challenges.
 ## Rails
 If the challenge references a "train" or "rails," then the cipher is most likely the Rail Fence cipher. The best option to decode is using cyberchef. 
 
-## Single Byte XOR 
+## Single Byte XOR
 Decrypt a single byte XOR using the following python script: 
 ```
 #! /bin/env/python3
@@ -129,7 +129,7 @@ If the cipher looks like:
 ```
 It is definitely Malbolge and can be decrypted using: https://malbolge.doleczek.pl/
 
-## Polybius 
+## Polybius
 If the cipher looks like: 
 ```
 413532551224514444425111431524443435454523114523114314
@@ -141,15 +141,28 @@ It is also called the Caesar Cipher where the letters are shifted 13 spots from 
 
 ## Wingdings
 If the code looks like:  ♐●♋♑❀♏📁🖮🖲📂♍♏⌛🖰♐🖮📂🖰📂🖰🖰♍📁🗏🖮🖰♌📂♍📁♋🗏♌♎♍🖲♏ or it references "wings", then it is windings! Use an [online decryption tool](https://www.dcode.fr/wingdings-font )
-# Hashes 
+
+## G-Codes
+G-Codes often show up like: 
+```
+G1X126.4138Y0.0000
+G1X126.9655Y0.2759
+G1X127.2414Y0.8276
+G0Z0.1
+G0X125.3103Y5.7931
+```
+
+They can be analyzed using [ncviewer](https://ncviewer.com/). 
+
+# Hashes
 Hashes come in a variety of versions and have been presented a variety of ways on a CTF. 
 
-## Hash Type 
+## Hash Type
 Determine the type of hash that is presented 
 ```hashid - Identify the different types of hashes used to encrypt data```
 ```hashid [-h] [-e] [-m] [-j] [-o FILE] [--version] INPUT```
 
-## MD5 
+## MD5
 Find the MD5 hash of a given image 
 ```md5sum - compute and check MD5 message digest```
 
@@ -164,7 +177,7 @@ Find the SHA256 hash of a given file
 ## Hashcat
 Hashcat is a great resource for cracking hashes. With a high powered machine it becomes better and better at its job. Website: https://hashcat.net/hashcat/
 
-# Certificates 
+# Certificates
 
 ## Certificate Signing Requests
 Sometimes, there are challenges that require analysis of a CSR file. Use [CSR Decoder](https://www.sslshopper.com/csr-decoder.html) or openssl to analyze. 

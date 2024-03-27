@@ -1,9 +1,9 @@
 # Steganography
 
-## Images 
+## Images
 Some CTF challenges require analysis of images for colors, space, hidden words, etc. 
 
-### GIMP 
+### GIMP
 Gimp is an image manipulation and paint program. If you are given two images and it appears that you need to lay them on top of each other to find the flag use gimp and change the opacity. Gimp is also able to remove layers of images and see the ones that are placed on top of each other. 
 
 ### pngcheck
@@ -18,25 +18,25 @@ The catch-all tool for stego that runs a combination of various tools below. It 
 ### Zsteg
 Another stego tool that must be installed using ruby. 
 
-### Exiftool 
-Exiftool is a great command line tool for reading metadata from a file. 
+### Exiftool
+Exiftool is a great command line tool for reading metadata from a file. It can also adjust information within the metadata of a file like create time and modify time. 
 
-### Strings 
+### Strings
 Strings prints the printable characters within a file, no matter the file. This command is also helpful for forensics and reverse engineering challenges. 
 
 ### Identify
 Identify is a command that prints characteristics of an image file. The verbose flag outputs important metadata for CTFs. 
 
-### Stegsnow 
+### Stegsnow
 Stegsnow is a great command to find information in the whitespace of an image. 
 
-### File 
+### File
 The file command expresses the type of file provided. It examines the header data of a file and returns the file type. 
 
 ### Bless
 Bless is a graphical editor of files and allows you to change the file itself like the magic number, header data, boot location, etc. 
 
-## Office Products 
+## Office Products
 Some CTF challenges provide office products like excel, word, or powerpoint. Often, the office product contains a
 
 ### Olevba
@@ -44,10 +44,10 @@ Examine Microsoft office documents for macros using olevba, which is a script to
 
 ```Command: olevba location_of_file```
 
-## Oledump		
+## Oledump
 Examine OLE files where it searches for streams of data within Office files that could hold malicious macros. 
 
-### PDFs 
+### PDFs
 PDFs have some interesting stego challenges. 
 
 ### pdf-parser.py

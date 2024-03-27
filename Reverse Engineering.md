@@ -1,6 +1,6 @@
-# Reverse Engineering 
+# Reverse Engineering
 
-## Binaries 
+## Binaries
 Reverse engineering challenges often have to do with examining binaries and re-creating the flag for yourself. 
 
 ### Binwalk
@@ -8,16 +8,31 @@ A command to look through a binary.
 ```
 binwalk -e firmware.bin
 ```
+### Ghidra
+Use [ghidra](https://ghidra-sre.org/) to reverse engineer all binaries. 
+
+### UPX
+Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
+
 ## Static Analysis
 Analysis of executables or binaries can be done statically. 
+
+### Ghidra
+Use [ghidra](https://ghidra-sre.org/) to reverse engineer all binaries. 
 
 ### XXD
 The xxd command returns a hexdump of the executable. 
 
-### Objdump 
+### Objdump
 Objdump is a command to display object data of a file. 
 
-## Java 
+### Detect It Easy
+Use [Detect It Easy](https://github.com/horsicq/Detect-It-Easy) to determine if something is packed and it's entry point. 
+
+### UPX
+Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
+
+## Java
 Some challenges in CTFs require analysis of Java code. 
 
 ### Disassemble

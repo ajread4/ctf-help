@@ -2,7 +2,7 @@
 
 ## C Code
 C code has some interesting vulnerabilities when it comes to binary exploitation. 
-### Max Value 
+### Max Value
 Below has a good explanation with example code. I got this from the AllArmyCTF.
 ```
 int tmp = first * second;
@@ -28,3 +28,5 @@ int tmp = first * second;
          first, second, tmp, s.numbers[tmp % 10]);
 }
 ```
+### Format Specifiers
+String format specifiers in C like ```printf``` and the use of ```%s``` allow you to execute commands. 

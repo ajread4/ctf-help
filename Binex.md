@@ -49,7 +49,10 @@ Utilize [pwninit](https://github.com/io12/pwninit) for starting up challenges th
 
 ### Gdb
 Use ```gdb``` on the command line to interact with compiled binaries. More information [here](https://sourceware.org/gdb/). 
- 
+
+### Use After Free Vuln
+If there are sections of code with ```free()``` and specific variables, attempt a [Use after free](https://learn.snyk.io/lesson/use-after-free/use) to interact with the information. 
+
 ## ROP Exploitation
 
 ### puts

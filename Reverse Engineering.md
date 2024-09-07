@@ -29,6 +29,9 @@ Objdump is a command to display object data of a file.
 ### Detect It Easy
 Use [Detect It Easy](https://github.com/horsicq/Detect-It-Easy) to determine if something is packed and it's entry point. 
 
+### CFF Explorer
+Use [CFF Explorer](https://ntcore.com/explorer-suite/) to look at executable, similar to Detect It Easy. 
+
 ### UPX
 Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
 
@@ -46,4 +49,3 @@ There is an awesome code beautifier, especially with PHP [here](https://codebeau
 
 ### VBScript Encryption/Decryption
 If there is any mention of WScript or VBScript, use the decryption tool [here](https://master.ayra.ch/vbs/vbs.aspx). 
-

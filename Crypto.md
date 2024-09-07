@@ -182,3 +182,8 @@ Hashcat is a great resource for cracking hashes. With a high powered machine it 
 ## Certificate Signing Requests
 Sometimes, there are challenges that require analysis of a CSR file. Use [CSR Decoder](https://www.sslshopper.com/csr-decoder.html) or openssl to analyze. 
 ```openssl req -in mycsr.csr -noout -text```
+
+# NTLMv2
+
+## Hash Recovery in Wireshark
+Can pull hashes from wireshark for cracking with [NTLMRawUnhide](https://github.com/mlgualtieri/NTLMRawUnHide). 

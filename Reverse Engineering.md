@@ -35,6 +35,9 @@ Use [CFF Explorer](https://ntcore.com/explorer-suite/) to look at executable, si
 ### UPX
 Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
 
+### Cobalt Strike Beacons
+[1768](https://github.com/DidierStevens/DidierStevensSuite/blob/master/1768.py) is a great tool to analyze CS beacons that require investigation. 
+
 ## Java
 Some challenges in CTFs require analysis of Java code. 
 

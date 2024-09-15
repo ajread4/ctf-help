@@ -102,5 +102,8 @@ There are some challenges that require you to analyze forensic images.
 ### Volatility
 [Volatility](https://github.com/volatilityfoundation/volatility) is the main forensics tool with any Windows image. It has a suite of capabilities to analyze many versions of the OS for data. 
 
-### UHARC 
+### Strings
+When it comes down to it, can always run ```strings``` against a memory image! 
+
+### UHARC
 If a file returns as UHARC, they can be analyzed via GUI or CMD (on a windows system) with [UHARC GUI](https://www.softpedia.com/get/Compression-tools/UHARC-GUI.shtml). Unix systems struggle to analyze these. Instead, shift over to a Windows system and view it. 

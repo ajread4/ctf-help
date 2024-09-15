@@ -123,3 +123,8 @@ There are some challenges that are specific for python code.
 
 ## Symlinks
 There is a possibility to read a file in python with ```f.read()``` where you can create a symlink to read another file. 
+
+# PowerShell
+
+## Download String
+Sometimes Cobalt Strike payloads must be grabbed by the target using PowerShell. Best avenue is to google deobfuscation of PowerShell with Cobalt Strike Beacons. Example [here](https://medium.com/@polygonben/deobfuscating-a-powershell-cobalt-strike-beacon-loader-c650df862c34)

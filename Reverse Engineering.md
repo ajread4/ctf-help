@@ -14,6 +14,9 @@ Use [ghidra](https://ghidra-sre.org/) to reverse engineer all binaries.
 ### UPX
 Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
 
+### Go Binaries
+If the binaries are written in Go, you can use [pygore](https://github.com/goretk/pygore) or [goretk](https://github.com/goretk). 
+
 ## Static Analysis
 Analysis of executables or binaries can be done statically. 
 

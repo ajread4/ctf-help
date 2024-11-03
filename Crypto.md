@@ -90,8 +90,14 @@ m = pow( c, d, n )
 print repr(binascii.unhexlify(hex(m)[2:-1]))
 ```
 
+Another option would be to use [dcode](https://www.dcode.fr/rsa-cipher). 
+
 # Cipher
 There are tons of ciphers out there that are used for CTF challenges. 
+
+## COW Programming Language
+If the cipher text provided looks like ```MoO mOo moo mOo mOo MMM moO moO MMM MOO MOo moO MoO mOo moo mOo mOo mOo MMM moO moO moO
+MMM MOO MOo moO MoO mOo moo moO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO Moo```, it is probably [COW](https://esolangs.org/wiki/COW) programming lanuage. Use [CacheSleuth](https://www.cachesleuth.com/cow.html) to decode. 
 
 ## Rails
 If the challenge references a "train" or "rails," then the cipher is most likely the Rail Fence cipher. The best option to decode is using cyberchef. 

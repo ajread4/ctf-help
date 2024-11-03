@@ -1,3 +1,44 @@
+# Emails
+
+## eml_analyzer
+You can examine .emil files with [eml_analyzer](https://github.com/wahlflo/eml_analyzer). 
+
+# Phishing
+Some challenges require you to phish a fake user 
+
+## NC
+Netcat can send emails using ```nc -c [host] [port]```. A good guide is here: [Netcat and Email](https://szclsya.me/posts/net/send-email-with-netcat/). Example code:
+
+```
+nc -C challenge.ctf.games 32503
+220 red-phish-blue-phish-be0042c22eaa2d04-8864dc68d-nt7jg Python SMTP 1.4.6
+EHLO 127.0.0.1
+250-red-phish-blue-phish-be0042c22eaa2d04-8864dc68d-nt7jg
+250-SIZE 33554432
+250-8BITMIME
+250-SMTPUTF8
+250 HELP
+MAIL FROM:<read.austin@gmail.com>
+250 OK
+RCPT TO:<swilliams@pyrchdata.com>
+250 OK
+DATA
+354 End data with <CR><LF>.<CR><LF>
+FROM: [AJ Read] <read.austin@gmail.com>
+To: <swilliams@pyrchdata.com>
+Date: Wed, 2 Oct 2024 21:00:00 -0400        
+Subject: Marketing Ideas
+
+Test these data concepts out for marketing! 
+
+```
+
+# Scripting
+Some challenges require a small form of scripting. 
+
+## Base64 Multiples
+If something requires you to base64 decode something multiple times, dont re-invent the wheel: [base64multipledecode](https://base64-multiple-decode.netlify.app/)
+
 # Audio
 Examining audio files in CTFs is not always the most fun. But, there are some interesting tools to use to listen to the audio itself or look at the spectrum. 
 
@@ -7,7 +48,7 @@ Audacity is a great utility for examining WAV files.
 ## DTMF Tones
 DTMF tones are interesting additions as audio files to CTFs. There is a DTMF identifier [here](https://unframework.github.io/dtmf-detect/#/). 
 
-# CMDLine
+# Comand Line Utilities
 There are some awesome command line utilities that can help with CTFs. 
 
 ## Cut
@@ -28,8 +69,7 @@ You can run a command with: ```!command ``` while in ```less```.
 ```grep``` is a great command for basic searching. One of the key flags is the ```-r``` or recursive flag. 
 
 ## Shell Type
-To find out what type of shell you are running in:
-    ```Command: echo $0```
+To find out what type of shell you are running in: ```Command: echo $0```
 
 ## Diff
 If you need to compare two files for differences, use ```diff [file1] [file2]```. There is also a way to compare recursively with ```-r```. 
@@ -103,11 +143,14 @@ compgen is a command line tool native to linux that can be run to determine what
 ## Python
 In order to escalate privileges, it may be required to use python to do so. If so, the user can look at which libraries are called and in what order with ```python3 -c 'import sys; print("\n".join(sys.path))'```. 
 
-# Command Line Tools
+# Command Line Tools with Bad/Tricky Terminal
 Some CTFs drop a user into a bad terminal that requires little tricks to access the desired information. 
 
 ## Echo
 Using ```echo *``` will read the contents of a directory if unable to use ```ls -la```. 
+
+## SSH Access and Echo
+There are challenges where ssh requires you to run commands immediately through using ```echo``` with ```echo "cat flag.txt" | ssh -p 30456 user@challenge[.]ctf[.]games```
 
 # Git
 There are some challenges that revolve around git repos like commits and pull history. 

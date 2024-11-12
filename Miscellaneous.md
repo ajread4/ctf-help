@@ -1,3 +1,11 @@
+# Time
+
+## Epoch Time
+Unix uses epoch time for some logs, convert with [EpochConverter](https://www.epochconverter.com/). 
+
+## Webkit Time
+Some web browsers dont use epoch time, they use Webkit. Best to convert with [WebKitConverter](https://www.epochconverter.com/webkit).
+
 # Emails
 
 ## eml_analyzer

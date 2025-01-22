@@ -95,6 +95,10 @@ It also has the capability to be used with burpsuite.
 sqlmap -r filename
 sqlmap -r sqli_save --tamper=space2comment --dbms=SQLite --dump-all -p search --level=5 --risk=3
 ```
+
+### Fixing SQL Injection
+Some challenges may require you to fix SQL injection attacks. PHP Data Objects (PDOs) are a common method to do so to create some form of protections. There is also options to specify expected user input using regex. 
+
 ## XML
 XML has some interesting vulnerabilities that you can use if the webpage uses an XML parser. 
 

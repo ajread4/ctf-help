@@ -7,7 +7,7 @@ Inspecting the authentication mechanism or means by which a user passes their us
 Use developer tools in the browser to inspect the authentication procedure. Files can pop up on the network connection that point to how the user is authenticated. 
 
 ### Java Web Tokens (JWT)
-JWTs are a common way for sites to authenticate users. Burpsuite can be used to check for the JWT within the authentication bearer section of the request. Hashcat as as module (16500) to crack the JWTs. Cheat sheet for cracking and abusing JWT can be found [here](https://book.hacktricks.xyz/generic-methodologies-and-resources/brute-force#jwt). 
+JWTs are a common way for sites to authenticate users. Burpsuite can be used to check for the JWT within the authentication bearer section of the request. Hashcat as as module (16500) to crack the JWTs. Cheat sheet for cracking and abusing JWT can be found [here](https://book.hacktricks.xyz/generic-methodologies-and-resources/brute-force#jwt). [jwt.io](https://jwt.io/ ) is a great site for analyzing JWTs. 
 
 ## File Upload
 If the CTF challenge needs you to drop a shell to get the flag or gain access to a system. 
@@ -33,6 +33,10 @@ wfuzz -c -z file,mywordlist.txt -d “username=FUZZ&password=FUZZ” -u http://s
 wfuzz -c -z file,big.txt http://shibes.xyz/api.php?breed=FUZZ
 wfuzz -c -z file,wordlist -u "http://10.10.225.218/api/site-log.php?date=FUZZ" --hc "404" --hh=0
 ```
+
+### Feroxbuster
+[Feroxbuster](https://github.com/epi052/feroxbuster) is great for fuzzing and finding web directories. 
+
 ## Improper File Access
 Webpages can fail to check access of a user, leaving them open to improper file access. 
 
@@ -110,3 +114,9 @@ Burpsuite can help with looking at possible XXE vulnerabilities. Good code to us
 
 ### Firefox Passwords
 Passwords from firefox can be snagged from a ```login.json``` file. There is a good write up [here](https://medium.com/geekculture/how-to-hack-firefox-passwords-with-python-a394abf18016). The code can be found in Python on Github [here](https://github.com/unode/firefox_decrypt). 
+
+
+## Domain
+
+### Whois
+```whois``` is a great command line tool to return information regarding a domain, when it was registered, and who owns the site. 

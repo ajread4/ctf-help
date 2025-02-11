@@ -66,3 +66,6 @@ A tool to look at specific objects and object streams within possibly malicious 
 
 ### pdfwalker.py
 A tool that can allow you to walk through a PDF via a GUI, most likely use on Windows machine to inspect PDF. 
+
+### pdfinfo
+A tool that can be used on the command line to find metadata of a pdf. 

@@ -103,6 +103,10 @@ Python has a geoip database (called geolite2) that can be used to find specific 
 import geoip2.database
 reader = geoip2.database.Reader('./GeoLite2-City_20200331/GeoLite2-City.mmdb')
 ```
+
+## Reverse Image Search
+Use the Google Reverse Image search tool to complete challenges that require you to find a location! 
+
 # Password Cracking
 There are great tools to use for cracking a password to grab the flag. 
 
@@ -122,6 +126,9 @@ Decrypting passwords with John the Ripper when ```/etc/passwd``` and ```/etc/sha
 ## PDFCrack
 Crack pdfs that are encrypted using a password. 
 ```Command: pdfcrack -w location_or_rockyou location_of_pdf```
+
+## Zip2John
+If provided with a zip file, you can try to crack the password to the zip file using john. But, you must first format using ```zip2john```. 
 
 # QR Codes
 Ever since COVID, QR codes have really been on the rise. 
@@ -179,3 +186,9 @@ There is a possibility to read a file in python with ```f.read()``` where you ca
 
 ## Download String
 Sometimes Cobalt Strike payloads must be grabbed by the target using PowerShell. Best avenue is to google deobfuscation of PowerShell with Cobalt Strike Beacons. Example [here](https://medium.com/@polygonben/deobfuscating-a-powershell-cobalt-strike-beacon-loader-c650df862c34)
+
+# Redis
+Redis is a type of server that has been seen in previous CTFs.  
+
+## Redis CLI
+Use ```redis-cli``` to interact with the redis server to find the flags. 

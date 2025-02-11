@@ -95,6 +95,12 @@ Another option would be to use [dcode](https://www.dcode.fr/rsa-cipher).
 # Cipher
 There are tons of ciphers out there that are used for CTF challenges. 
 
+## Hexadecimal
+Any cipher that has ```/x/x/x``` is most likely hexadecimal. 
+
+## BCrypt
+Any cipher that begins with "$2y$" is Brcrypt. 
+
 ## COW Programming Language
 If the cipher text provided looks like ```MoO mOo moo mOo mOo MMM moO moO MMM MOO MOo moO MoO mOo moo mOo mOo mOo MMM moO moO moO
 MMM MOO MOo moO MoO mOo moo moO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO MoO Moo```, it is probably [COW](https://esolangs.org/wiki/COW) programming lanuage. Use [CacheSleuth](https://www.cachesleuth.com/cow.html) to decode. 

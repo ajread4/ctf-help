@@ -1,5 +1,11 @@
 # Reverse Engineering
 
+## Dynamic Analysis
+Analysis of binaries and files can be done while running them! 
+
+### EDB Bugger
+[edb-bugger](https://github.com/eteran/edb-debugger) is a great tool for debugging. It is also available via the command line on some distros! 
+
 ## Binaries
 Reverse engineering challenges often have to do with examining binaries and re-creating the flag for yourself. 
 

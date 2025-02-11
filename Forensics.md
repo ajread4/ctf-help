@@ -138,7 +138,11 @@ https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/
 ### Create File
 If provided just the contents of a hexdump, ```xxd``` has the ability to reverse the hexdump and recreate the file using the ```-r``` flag. 
 
+### ISO Files
+The best option to open up ISO/MP4 files is using VLC on Linux. The file is essentially an audio file. 
+
 ## Floppy Disk
+
 ### QEMU
 QEMU is a great resource for examing a floppy image. Example command: 
 ```
@@ -204,6 +208,9 @@ Some challenges require analysis of emails.
 
 ### Email Headers
 There are various tools to use for examining email headers to include [Message Header Analyzer](https://mha.azurewebsites.net/), [Google Message Header](https://toolbox.googleapps.com/apps/messageheader/analyzeheader), [Mail Header Analysis](https://mailheader.org/). There is also a good room on TryHackMe for email header analysis [here](https://tryhackme.com/room/phishingemails3tryoe). 
+
+### Eml-extractor
+You can extract the attachments within email files (.eml) for analysis using ```eml-extractor```.
 
 ## Web
 There are some challenges that are forensics based with web adjacency. 

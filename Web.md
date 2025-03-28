@@ -18,6 +18,9 @@ When trying to find locations to drop a shell, look for directories that can be 
 ### File extension filtering
 Webs servers sometimes only allow a certain list of uploaded files, if the extension is not allowed, it will not allow upload. To bypass, some extension filters split the name based on “.” so adding something like .jpg.php will be allowed for a php reverse shell.
 
+### Upload Shell
+If there is an upload function and the source code is clearly in php, upload a shell: [SimplePHPShell](https://gist.github.com/joswr1ght/22f40787de19d80d110b37fb79ac3985). 
+
 ## Fuzzing
 Some CTFs dont allow much fuzzing, but in case they do. 
 
@@ -76,6 +79,9 @@ Often carried out through HTTP request.
 ### JavaScript
 If you see javascript, you can compile with an [online](https://www.programiz.com/javascript/online-compiler/) tool. 
 
+### Server Side Template Injection (SSTI)
+Google the best indicators of SSTI attacks. Some web challenges may require you to test them out. A test is ```{{7*7}}``` in the input box. But in the end, the best test is: ```{{request.application.__globals__.__builtins__.__import__('os').popen('ls -R').read()}}```. 
+
 ## SQL
 SQL injection is common for web CTF challenges. 
 
@@ -115,8 +121,8 @@ Burpsuite can help with looking at possible XXE vulnerabilities. Good code to us
 ### Firefox Passwords
 Passwords from firefox can be snagged from a ```login.json``` file. There is a good write up [here](https://medium.com/geekculture/how-to-hack-firefox-passwords-with-python-a394abf18016). The code can be found in Python on Github [here](https://github.com/unode/firefox_decrypt). 
 
-
 ## Domain
 
 ### Whois
 ```whois``` is a great command line tool to return information regarding a domain, when it was registered, and who owns the site. 
+

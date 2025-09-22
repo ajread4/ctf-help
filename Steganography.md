@@ -3,6 +3,9 @@
 ## Images
 Some CTF challenges require analysis of images for colors, space, hidden words, etc. 
 
+### Enchancing
+Some images require you to enahce the data contained within the image. The best method is to use ```strings``` to read the various styles and frames contained. 
+
 ### GIMP
 Gimp is an image manipulation and paint program. If you are given two images and it appears that you need to lay them on top of each other to find the flag use gimp and change the opacity. Gimp is also able to remove layers of images and see the ones that are placed on top of each other. 
 
@@ -30,6 +33,9 @@ Identify is a command that prints characteristics of an image file. The verbose 
 ### Stegsnow
 Stegsnow is a great command to find information in the whitespace of an image. 
 
+### Binwalk
+Use the command ```binwalk``` to find data in slack space. 
+
 ### File
 The file command expresses the type of file provided. It examines the header data of a file and returns the file type. 
 
@@ -44,10 +50,10 @@ Examine Microsoft office documents for macros using olevba, which is a script to
 
 ```Command: olevba location_of_file```
 
-## Oledump
+### Oledump
 Examine OLE files where it searches for streams of data within Office files that could hold malicious macros. 
 
-### PDFs
+## PDFs
 PDFs have some interesting stego challenges. 
 
 ### pdf-parser.py

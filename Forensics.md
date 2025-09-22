@@ -1,5 +1,8 @@
 # Forensics
 
+## File Carving
+Use ```dd``` to complete file carving using an example command like: ```dd if=Challenge1_Manual_Carve_usb.img of=Image.png bs=1 skip=134483968 count=463```. You can also use automatic tools like [Foremost](https://www.hackingarticles.in/forensic-data-carving-using-foremost/) or [Scalpel](https://github.com/sleuthkit/scalpel). 
+
 ## SQL
 CTFs can provide you sql databases to analyze during this category of challenge. 
 
@@ -135,13 +138,15 @@ The magic number of a file is unique and shows what type of file something is. U
 
 https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/
 
+Another resource is this: https://filesig.search.org/
+
 ### Create File
 If provided just the contents of a hexdump, ```xxd``` has the ability to reverse the hexdump and recreate the file using the ```-r``` flag. 
 
 ### ISO Files
 The best option to open up ISO/MP4 files is using VLC on Linux. The file is essentially an audio file. 
 
-## Floppy Disk
+## Disk Image
 
 ### QEMU
 QEMU is a great resource for examing a floppy image. Example command: 
@@ -170,6 +175,9 @@ open up qemu monitor to inspect floppy image at a different location
 
 ### Boot Sector
 For some floppy images, it is necessary to change portions of the image using ```bless```. Usually this occurs because running the ```file``` command on the image returns something unexepcted or incorrect. In one CTF, the last portion of the boot sector in a floppy image had to be ```0xAA55``` to be able to boot properly as MBR DOS. To make sure it is read properly, use the ```file``` command again and see if it reads as the corrected file type. 
+
+### mmls
+Gather information about the device img using ```mmls``` which can be useful to find the sector sizes and number of sectors. 
 
 ## Wireshark
 Wireshark is a great forensics tool for looking at network data. There are tons of tips and tricks with the tool. 
@@ -220,6 +228,9 @@ Passwords from firefox can be snagged from a ```login.json``` file. There is a g
 
 ## Image Analysis
 There are some challenges that require you to analyze forensic images. 
+
+### Binwalk
+The command ```biwalk``` can be used to search in the slack space of a file. 
 
 ### Wimapply
 [Wimapply](https://wimlib.net/man1/wimapply.html) is a great tool to view and interact with images that are described as "Windows imaging (WIM) image v1.13, XPRESS compressed, reparse point fixup."

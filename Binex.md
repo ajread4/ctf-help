@@ -29,8 +29,7 @@ int tmp = first * second;
 }
 ```
 ### Format Specifiers
-String format specifiers in C like ```printf``` and the use of ```%s``` allow you to execute commands. Can also use ```%x``` to print out the stack. If so, make sure to swap the endianess (to reverse what is displayed) and convert from hex using cyberchef. 
-
+String format specifiers in C like ```printf``` and the use of ```%s``` allow you to execute commands. Can also use ```%x``` to print out the stack. If so, make sure to swap the endianess (to reverse what is displayed) and convert from hex using cyberchef. Good tests are using ```%lx``` or ```%p``` to print stack too. To run something repeatedly in input use ```%19$p``` which will do ```%p``` 19 times. 
 
 ### Heap Manager Optimization (```tcache```)
 There is a good explanation of heap manager optimization [here](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Cache_Me_Outside.md) in solving a PicoGym challenge. 

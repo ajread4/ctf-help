@@ -189,6 +189,9 @@ Find the SHA256 hash of a given file
 ## Hashcat
 Hashcat is a great resource for cracking hashes. With a high powered machine it becomes better and better at its job. Website: https://hashcat.net/hashcat/
 
+## Online Tool
+A good online tool can be found [here](https://crackstation.net/). 
+
 # Certificates
 
 ## Certificate Signing Requests

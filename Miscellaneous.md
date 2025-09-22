@@ -192,3 +192,8 @@ Redis is a type of server that has been seen in previous CTFs.
 
 ## Redis CLI
 Use ```redis-cli``` to interact with the redis server to find the flags. 
+
+# URLs
+
+## Shortened URLs
+With tinyurl, you can find the actual location of the redirected URL by adding a "+" to the end. 

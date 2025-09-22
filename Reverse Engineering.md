@@ -18,13 +18,19 @@ binwalk -e firmware.bin
 Use [ghidra](https://ghidra-sre.org/) to reverse engineer all binaries. 
 
 ### UPX
-Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
+Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. The best way to check for packing is to check for entropy. The command to run is ```upx -d```. 
 
 ### Go Binaries
 If the binaries are written in Go, you can use [pygore](https://github.com/goretk/pygore) or [goretk](https://github.com/goretk). 
 
+### x32/x64dbg
+Some binaries require you to set breakpoints and analysis registers, the best tool is [x64dbg](https://x64dbg.com/). 
+
 ## Static Analysis
-Analysis of executables or binaries can be done statically. 
+Analysis of executables or binaries can be done statically.
+
+### Checksec
+Use ```checksec``` to determine if the file is position independent (PIE). 
 
 ### Ghidra
 Use [ghidra](https://ghidra-sre.org/) to reverse engineer all binaries. 
@@ -42,7 +48,7 @@ Use [Detect It Easy](https://github.com/horsicq/Detect-It-Easy) to determine if 
 Use [CFF Explorer](https://ntcore.com/explorer-suite/) to look at executable, similar to Detect It Easy. 
 
 ### UPX
-Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. 
+Some binaries are packed, you can use [UPX](https://github.com/upx/upx) to unpack binaries. The command to run for unpacking is ```upx -d```. 
 
 ### Cobalt Strike Beacons
 [1768](https://github.com/DidierStevens/DidierStevensSuite/blob/master/1768.py) is a great tool to analyze CS beacons that require investigation. 

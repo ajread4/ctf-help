@@ -1,5 +1,11 @@
 # Forensics
 
+## Notepad Files
+You can find unsaved versions of files from notepads within ```C/Users/[USER]/AppData/Local/Packages/Microsoft.WindowsNotepad_8wekyb3d8bbwe/LocalState/TabState```. Analyze the files with ```xxd```. 
+
+## Darcs File
+A challenge prompt may reference something like "Darcy", it like points to a darcs file which will have information and a hashed repo within the ```__darcs``` sub folder. More info [here](https://darcs.net/Using/Configuration). 
+
 ## File Carving
 Use ```dd``` to complete file carving using an example command like: ```dd if=Challenge1_Manual_Carve_usb.img of=Image.png bs=1 skip=134483968 count=463```. You can also use automatic tools like [Foremost](https://www.hackingarticles.in/forensic-data-carving-using-foremost/) or [Scalpel](https://github.com/sleuthkit/scalpel). 
 
@@ -120,6 +126,12 @@ reglookup is a great command line tool for looking at registry data.
 
 ### registryspy
 Use [registryspy](https://github.com/andyjsmith/Registry-Spy) for a GUI version on linux. 
+
+### Regripper
+Use [regripper](https://github.com/keydet89/RegRipper3.0) to look at the registry data quickly. 
+
+### Registry Explorer
+Eric Zimmerman produced a good tool called [RegistryExplorer](https://ericzimmerman.github.io/#!index.md) for using a GUI to look through NTUSER.dat or other registry hives. 
 
 ## Code
 Code can be obfuscated from easy view. 

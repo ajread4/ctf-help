@@ -160,6 +160,9 @@ The best option to open up ISO/MP4 files is using VLC on Linux. The file is esse
 
 ## Disk Image
 
+### Mac Images
+If you have a mac image, you can boot in linux CLI with [apfs-fuse](https://github.com/sgan81/apfs-fuse). Another tool to look at the database files can be [Apollo](https://github.com/mac4n6/APOLLO). In order to look at plist files, you can use [libplist](https://github.com/libimobiledevice/libplist).
+
 ### QEMU
 QEMU is a great resource for examing a floppy image. Example command: 
 ```
